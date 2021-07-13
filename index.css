@@ -5,10 +5,7 @@
     list-style: none;
     text-decoration: none;
 }
-.fa-paw{
-    color: #fff;
-    
-}
+
 /* color -#F85A40 */
 a{
     color: black;
@@ -56,13 +53,15 @@ a{
     font-size: 0.95rem;
 
 }
+
 #one{
+    
 
 
-    background-image:linear-gradient(to left bottom,
-        rgba(0, 0, 0, 0.2),
-        rgba(0, 0, 0, 0.7)),
-    url('images/banner1.jpg');
+    background-image: linear-gradient(75deg, rgb(6 6 6 / 64%) 8%, transparent),
+        url("images/banner1.jpg");
+    background-position: center;
+    background-size: cover;
   
     
 
@@ -72,21 +71,14 @@ a{
 #nav{
     display: flex;
     flex-direction: column;
-    position: relative;
+  
 
 }
 #nav ul{
     text-align: center;
     margin: 0px 15px;
     display: none;
-    
- 
-    
-   
-   
 
-
-    
 
   
 }
@@ -99,7 +91,7 @@ a{
     
 }
 #nav ul  li a{
-    color: #F85A40;
+    color: black;
     padding: 11em 0em;
     text-transform: uppercase;
     font-family: 'Raleway',
@@ -110,6 +102,12 @@ a{
   
 
 }
+#nav ul li:first-child a {
+    color:#F85A40;
+
+
+}
+
 .logo:hover{
     color: #F85A40;
 
@@ -246,8 +244,58 @@ a{
     position: fixed;
     width: 100vw;
     z-index: 10 !important;
+    background: #fff;
+    
+    
+    
 
 }
+
+/* 
+=======
+half half half
+=======
+*/
+#one-half{
+    padding:7% 3% 7% 3% ;
+    font-family: 'Raleway',
+    sans-serif;
+}
+#one-half span>img{
+    width: 100%;
+    
+}
+.half__text>h1{
+    padding: 20px 0px;
+    font-size: 30px;
+    font-weight: 600;
+}
+
+.half__text p{
+    line-height: 25px;
+    font-size: 17px;
+}
+
+.half__boxes{
+    display: flex;
+    gap: 40px;
+}
+.box>h2{
+    font-family: 'Roboto',sans-serif;
+    font-size: 20px;
+    padding: 0px  0px 15px 0px;
+    
+}
+.box>p{
+    font-size: 16px;
+    letter-spacing: 1px;
+}
+.box span>i{
+    color: #F85A40;
+    font-size: 35px;
+    padding: 25px 0px 10px 0px ;
+}
+
 
 /* 
 =======
@@ -271,7 +319,79 @@ heading
 
 } */
 
+.black{
+    color: black;
+}
 
+/* 
+=======
+two
+======= 
+ */
+
+.info span>img {
+       width: 100%;
+   }
+
+.container{
+    padding: 10%;
+    
+}
+
+.info {
+    text-align: start;
+    line-height: 30px;
+    letter-spacing: 1px;
+
+   
+    box-shadow: 0 1px 1px 0 rgb(10 16 34 / 20%);
+    background: #fff;
+
+
+    font-family: 'Raleway',
+        sans-serif;
+
+}
+
+.info__text h1 {
+    font-size: lighter;
+    font-size: 20px;
+    padding: 10px;
+
+}
+
+.info__text p {
+    padding: 10px;
+
+
+}
+
+.info__text h5 {
+    color: #F85A40;
+    padding: 10px;
+
+}
+
+.info:hover {
+    box-shadow: 0 30px 30px rgba(0, 0, 0, .5);
+}
+
+.info span>img {
+    width: 100%;
+}
+
+.info__text {
+    padding: 10px;
+}
+
+.info__text>p {
+    line-height: 20px;
+
+}
+
+.info{
+    margin-bottom: 30px;
+}
 
 @media screen and (min-width:995px) {
    #nav{
@@ -302,6 +422,13 @@ heading
         sans-serif;
         ;
     }
+
+    #nav ul li:first-child a {
+        color: #fff;
+
+
+    }
+
 
    .hamburger{
        display: none;
@@ -334,7 +461,13 @@ heading
     line-height: 55px;
 
 }
+.black {
+    color: black;
+}
 
+.black2{
+    color: black;
+}
 
 /* 
   =====
@@ -342,46 +475,86 @@ heading
   ==== 
   */
 
-.heading{
-    width: 50%;
-    margin: 0 auto;
-    font-size: 20px;
+  .heading {
+      width: 50%;
+      margin: 0 auto;
+      font-size: 20px;
+
+  }
+
+  .heading>h1 {
+      line-height: 45px;
+  }
+
+  .heading>p {
+      line-height: 32px;
+  }
+
+  .container {
+      flex-wrap: wrap;
+      display: flex;
+
+      justify-content: space-evenly;
+      background: #fafafa;
+      padding: 5%;
+
+
+
+  }
+
+  .info {
+      text-align: start;
+      line-height: 30px;
+      letter-spacing: 1px;
+    
+      width: 25%;
+      box-shadow: 0 1px 1px 0 rgb(10 16 34 / 20%);
+      background: #fff;
+      
+      
+      font-family: 'Raleway',
+      sans-serif;
+
+  }
+
+  /* 
+  ======
+  half
+  ======
+   */
+
+   #one-half{
+       display: flex;
+       
    
-}
-.heading>h1{
-    line-height: 45px;
-}
-.heading>p{
-    line-height: 32px;
-}
-   
-.container {
-    flex-wrap: wrap;
-    display: flex;
-    background: blue;
-    justify-content: space-evenly;
+      
+       justify-content: center;
+   }
+   .half-content{
+       width: 40%;
+      
+       
+    
+
+   }
+ 
+
+
+   .half__boxes{
+       width: 100%;
+   }
+   #one-half span>img{
+       width: 90%;
+       margin-left: auto;
+   }
+
+   .half__text>h1 {
+      
+       font-size: 37px;
+       font-weight: 600;
+   }
 
   
 
-}
 
-.info {
-    text-align: start;
-    line-height: 30px;
-    letter-spacing: 1px;
-    background: red;
-    width: 25%;
-    box-shadow: -1px 12px 7px 17px black;
-   
-}
-.info span>img{
-    width: 100%;
-}
-.info__text{
-    padding: 10px;
-}
-.info__text>p{
-    line-height: 20px;
-
-}
 }
