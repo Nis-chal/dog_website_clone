@@ -4,6 +4,8 @@
     box-sizing: border-box;
     list-style: none;
     text-decoration: none;
+    font-family: 'Raleway',
+    sans-serif;
 }
 
 /* color -#F85A40 */
@@ -274,6 +276,7 @@ half half half
 .half__text p{
     line-height: 25px;
     font-size: 17px;
+    color: #707070;
 }
 
 .half__boxes{
@@ -289,6 +292,7 @@ half half half
 .box>p{
     font-size: 16px;
     letter-spacing: 1px;
+    color: #707070;
 }
 .box span>i{
     color: #F85A40;
@@ -354,7 +358,8 @@ two
 }
 
 .info__text h1 {
-    font-size: lighter;
+    
+    font-weight: 600;
     font-size: 20px;
     padding: 10px;
 
@@ -362,6 +367,7 @@ two
 
 .info__text p {
     padding: 10px;
+    color: #707070;
 
 
 }
@@ -371,6 +377,8 @@ two
     padding: 10px;
 
 }
+
+
 
 .info:hover {
     box-shadow: 0 30px 30px rgba(0, 0, 0, .5);
@@ -392,6 +400,265 @@ two
 .info{
     margin-bottom: 30px;
 }
+
+/*
+============
+ four four four
+============
+ */
+#four{
+    padding: 15px;
+}
+#four article h1{
+    font-size: 30px;
+    font-family: 'Raleway',
+    sans-serif;
+    font-weight: 600;
+}
+
+#four article p{
+    margin-top: 20px;
+    font-size: 16px;
+    line-height: 28px;
+    letter-spacing: .4px;
+    color: #707070;
+    font-family: 'Raleway',
+    sans-serif;
+    text-align: justify;
+}
+
+.article__icon{
+    display: flex;
+    gap: 70px;
+    margin: 40px 0px;
+
+}
+
+.customer__info span>i{
+    color: #1A2C79;
+
+    font-size: 25px;
+}
+
+.customer__info span{
+    font-weight: bold;
+    font-size: 25px;
+}
+.some__info{
+    display: flex;
+    
+    gap: 30px;
+}
+.some__info img{
+    border-radius: 50%
+}
+
+.some__info p{
+    color: #707070;
+    font-size: 17px;
+    letter-spacing: .4px;
+    line-height: 24px;
+
+
+    
+}
+.four__text> h1{
+    font-size: 70px;
+    font-weight: 300;
+    color: #1A2C79;
+    height: 30px;
+    
+    
+
+
+}
+
+.four__text >p{
+    font-size: 15.55px;
+
+}
+.four__text >h4{
+    margin: 20px 0px;
+    color: #1A2C79;
+}
+
+/* five five five five */
+
+#five{
+    padding: 0px 20px 0px 20px;
+   
+}
+.dog__image{
+    display: flex;
+    justify-content: center;
+    
+}
+
+.dog__box{
+    padding: 20px 0px;
+
+}
+
+.dog__box span>i{
+    font-size: 22px;
+    padding: 10px 0px;
+    color: #F85A40;
+}
+
+.dog__box h4 {
+    font-size: 20px;
+    font-weight: 600;
+    padding: 10px 0px;
+    
+}
+
+.dog__box p{
+    color: #707070;
+}
+#six{
+    background: url(images/bg.jpg);
+    background-position: top;
+    background-attachment: fixed;
+    color: white;
+    padding: 80px 3%;
+}
+
+#six h1{
+    font-size: 33px;
+    font-weight: 600;
+    line-height: 45px;
+    letter-spacing: 1px;
+    margin: 20px 0 20px 0;
+}
+
+/* seven seven seven */
+
+#seven .info h5{
+    color: #1A2C79;
+}
+
+#seven pre{
+    color: #1A2C79;
+    font-style: italic;
+    font-weight: 500;
+    font-size: 15px;
+}
+
+#eight{
+    background: #060606;
+    color: #fff;
+    padding: 90px 3%;
+}
+
+/* #eight span>i::after{
+    content: "Dogs Care";
+    margin-left: 10px;
+    cursor: pointer;
+    
+   
+    
+    
+
+}
+.dog__care span>i{
+   
+}
+.dog__care span>i:hover {
+    color: #F85A40;
+}
+
+
+.dog__care span>i:hover::after {
+    color: #F85A40;
+    font-size: 20px;
+    transition: 1s;
+    
+
+
+} */
+
+.dog__care span{
+    font-size: 27px;
+    font-family: 'Raleway',
+    sans-serif;
+    font-weight: 600;
+}
+
+.dog__care span>i{
+   
+    color: #F85A40;
+    margin-right: 7px;
+    font-size: 30px;
+    
+    
+}
+.dog__care p{
+    width: 90%;
+    color: #f4f4f4ce;
+    line-height: 29px;
+    margin: 20px 0px;
+}
+.categories{
+    display: flex;
+    gap:90px;
+}
+.dog__categories{
+    margin-bottom: 20px;
+}
+.dog__categories >h3{
+    margin: 0px 0px 30px 0px;
+}
+.categories ul li{
+    line-height: 30px;
+    font-size:1rem ;
+    color: #f4f4f4ce;
+}
+
+.newsletter>h3+h3{
+    margin: 20px 0px;
+}
+.newsletter span {
+    display: flex;
+    padding-bottom: 20px;
+    
+}
+
+.newsletter span>input{
+    padding: 15px 180px 15px 0px;
+}
+
+.newsletter span>button{
+    padding: 15px 50px;
+    background: #F85A40;
+    color: #fff;
+    font-size: 20px;
+}
+.newsletter{
+    margin-bottom: 55px;
+    
+}
+.footer__container{
+    border-bottom:0.15px solid #707070 ;
+}
+
+.copyright>p{
+    margin-top: 20px;
+    text-align: center;
+    font-size: 14px;
+    
+}
+
+.copyright p>strong{
+    color: #F85A40;
+}
+.copyright p>strong:hover {
+    color: #fff;
+    border-bottom: .25px solid #fff;
+    transition: 1.75s;
+}
+
+
+
 
 @media screen and (min-width:995px) {
    #nav{
@@ -507,7 +774,7 @@ two
       line-height: 30px;
       letter-spacing: 1px;
     
-      width: 25%;
+      width: 28%;
       box-shadow: 0 1px 1px 0 rgb(10 16 34 / 20%);
       background: #fff;
       
@@ -554,7 +821,79 @@ two
        font-weight: 600;
    }
 
+   /*
+   ======== 
+   four four four 
+   ========*/
+   #four{
+       display: flex;
+       gap: 90px;
+       padding: 10%;
+       
+   }
+
+   /* five five five */
+   #five{
+       display: flex;
+       padding: 10%;
+       align-items: center;
+   }
+
+   .dog__image{
+       min-width: 200px;
+       height: 400px;
+   
+   }
+
+   /* eight eight eight */
+
+   .footer__container{
+       display: flex;
+   }
+   .newsletter,.dog__categories{
+       width: 30%;
+   }
+   .dog__care{
+       width: 30%;
+   }
+   
+
+   /* eight eight */
+   .newsletter span>button{
+       padding: 10px 30px;
+   }
+
+   #eight{
+       padding: 90px 10%;
+   }
+
   
 
 
+}
+
+@media screen and ( min-width: 575px) {
+    /* five five five */
+    .dog__boxes{
+        display: flex;
+        padding: 0 10% 0 10%;
+    }
+
+    /* six six six  */
+
+    #six h1{
+        max-width: 700px;
+        font-size: 40px;
+    }
+    #six {
+        padding-left: 10%;
+    }
+    
+    /* eight eight eight */
+
+    .copyright>p {
+        margin-top: 20px;
+        text-align: start;
+
+    }
 }

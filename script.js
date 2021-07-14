@@ -7,16 +7,18 @@ $(document).ready(function () {
 
 $(window).scroll(function () {
     let scroll = $(window).scrollTop();
+    let width = $(window).width()
  
     console.log(scroll)
 
-    if (scroll >= 70 ) {
+    if (scroll >= 70 && width >= 995) {
         $('nav').addClass("new-nav");
 
         $('nav ul li a').css({"color":"black"})
 
         $('.nav-heading span').addClass("black")
-        $('.nav-heading span>i').addClass("redish")
+        $('.nav-heading span>i').css({"color":"#F85A40"})
+        $('.nav-links>span>i').css({"color":"black"})
 
 
 
@@ -30,15 +32,33 @@ $(window).scroll(function () {
      
     }
 
-    else {
+    else if (scroll==0 && width >= 995){
         $('nav').removeClass("new-nav");
+        $('nav ul li a').css({"color":"#fff"})
+        $('.nav-heading span>i').css({"color":"#fff"})
        
 
         $('.nav-heading span').removeClass("black")
+
+        $('.nav-links>span>i').css({"color":"#fff"})
         // $('nav ul li a').css({"color": "#fff"})
 
         // $('.nav-heading span').css({"color":"#fff"})
         // $('.nav-heading span>i').css({"color":"#fff"})
+
+    }
+    else if(scroll>=70 && width<995){
+        $('nav').addClass("new-nav");
+        $('.nav-heading span').addClass("black")
+        $('.nav-heading span>i').css({"color":"#F85A40"})
+
+    }
+
+    else if(scroll ==0 && width < 995 ){
+        $('nav').removeClass("new-nav");
+        $('.nav-heading span').removeClass("black")
+
+        $('.nav-links>span>i').css({"color":"#fff"})
 
     }
 })
