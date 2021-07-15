@@ -6,7 +6,12 @@
     text-decoration: none;
     font-family: 'Raleway',
     sans-serif;
+    
 }
+
+  .container__bg {
+      background: #fafafa;
+  }
 
 /* color -#F85A40 */
 a{
@@ -53,6 +58,7 @@ a{
     font-family: 'Raleway',
     sans-serif;
     font-size: 0.95rem;
+    cursor: pointer;
 
 }
 
@@ -92,6 +98,20 @@ a{
   
     
 }
+#nav ul li:nth-of-type(4)::after{
+    content: "\2228";
+    color: #fff;
+    font-size: 10px;
+    vertical-align:top;
+
+
+}
+#nav ul li:nth-of-type(1) a{
+    padding-bottom: 10px;
+    border-bottom: 0.25px solid white;
+    
+}
+
 #nav ul  li a{
     color: black;
     padding: 11em 0em;
@@ -99,9 +119,22 @@ a{
     font-family: 'Raleway',
     sans-serif;
     font-weight: bold;
+    cursor: pointer;
 
+    
   
   
+
+}
+
+
+#nav ul li+li a:hover {
+    box-shadow: 1px 14px 0px -1px rgba(0, 0, 0, 0),
+  
+   -1px 19px 0px -9px rgba(255, 255, 255, 1);
+    
+
+    transition: 0.1s;
 
 }
 #nav ul li:first-child a {
@@ -109,6 +142,17 @@ a{
 
 
 }
+.nav-heading>span{
+    color: white;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.nav-heading>span:hover{
+    color: #F85A40;
+}
+
 
 .logo:hover{
     color: #F85A40;
@@ -117,6 +161,7 @@ a{
 
 .nav-links .fa-moon{
     display: none;
+    cursor: pointer;
 }
 
 
@@ -349,11 +394,13 @@ two
 
    
     box-shadow: 0 1px 1px 0 rgb(10 16 34 / 20%);
-    background: #fff;
+    
 
 
     font-family: 'Raleway',
         sans-serif;
+
+    border: .25px solid #fff;
 
 }
 
@@ -543,6 +590,12 @@ two
     font-weight: 500;
     font-size: 15px;
 }
+#seven{
+    padding-top: 50px;
+}
+
+/* eight eight eight */
+
 
 #eight{
     background: #060606;
@@ -642,23 +695,128 @@ two
 }
 
 .copyright>p{
-    margin-top: 20px;
+    margin: 20px 0px;
     text-align: center;
     font-size: 14px;
+    line-height: 27px;
     
 }
 
 .copyright p>strong{
     color: #F85A40;
+    
 }
 .copyright p>strong:hover {
     color: #fff;
     border-bottom: .25px solid #fff;
     transition: 1.75s;
+    ;
+}
+
+.share {
+    justify-content: center;
+    display: flex;
+
+}
+
+.share div {
+    border-radius: 25px;
+    background: #222222;
+    width: 35px;
+    height: 35px;
+    margin-right: 10px;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+
+}
+.share div:hover{
+    background: #fafafa;
+    color: #F85A40;
+    transition: .75s;
+}
+.dark-mode {
+    /* filter: invert(1) hue-rotate(180deg); */
+    background: #222222;
+    color: white;
+}
+
+/* gallery gallery gallery gallery */
+
+
+
+.first__row span>img{
+    width:100%;
+    height: auto;
+    max-width: 275px;
+    position: relative;
+    cursor: pointer;
+
+}
+/* .first__row span {
+    position: relative;
+}
+.first__row span::before {
+    content: '';
+    position: absolute;
+    top:0;
+    left:0;
+    width: 50%;
+    height: 100%;
+    background: rgba(255,255,255,.1);
+    color: red;
+    
+
+}
+.first__row span::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 50%;
+    height: 100%;
+    background: linear-gradient(90deg,transparent,rgba(255,255,255,.4),transparent);
+    transition: 0.5s;
+
+
+} */
+
+.first__row span:hover::after {
+    content: '';
+    position: absolute;
+    left: 100%;
+
+
+}
+.gallery__container{
+    max-width: 1170px;
+    font-size: 0;
+    margin: 0 auto;
+    padding: 40px 3% 0px 3%;
+}
+.first__column{
+    width: 25%;
+    font-size: 0;
+}
+
+.first__column span>img{
+    width: 100%;
+    height: auto;
+    max-width: 275px;
+    
 }
 
 
+.big__image{
+    width: 50%;
+}
+.second__row span>img{
+    width: 100%;
+    height: auto;
+    max-width: 540px;
+    
 
+}
 
 @media screen and (min-width:995px) {
    #nav{
@@ -762,12 +920,13 @@ two
       display: flex;
 
       justify-content: space-evenly;
-      background: #fafafa;
+      
       padding: 5%;
 
 
 
   }
+
 
   .info {
       text-align: start;
@@ -776,7 +935,7 @@ two
     
       width: 28%;
       box-shadow: 0 1px 1px 0 rgb(10 16 34 / 20%);
-      background: #fff;
+      
       
       
       font-family: 'Raleway',
@@ -895,5 +1054,10 @@ two
         margin-top: 20px;
         text-align: start;
 
+    }
+    .copyright{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
     }
 }
